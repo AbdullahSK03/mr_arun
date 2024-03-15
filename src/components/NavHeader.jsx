@@ -1,8 +1,10 @@
 import React from 'react'
 
-const NavHeader = () => {
+const NavHeader = (props) => {
   return (
-    <div>NavHeader</div>
+    <div className={`${props.className} NavHeader`}>
+        NavHeader
+        </div>
   )
 }
 
