@@ -9,8 +9,8 @@ import HeaderNav from "@/components/Navbar/HeaderNav";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={""}>
-        <HeaderNav />
+      <body className={`m-3`}>
+        <HeaderNav className=" header-nav"/>
         {children}
       </body>
     </html>
