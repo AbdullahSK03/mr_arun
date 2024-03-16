@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 
-.NavHeader {
-  box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
-}
+:root {
+  --color-primary: #561C24;
+  --color-secondary: #6D2932;
+  --color-neutral: #C7B7A3;
+  --color-error: #E8D8C4;
+  }
 
-.hero-img {
-  box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
-}
