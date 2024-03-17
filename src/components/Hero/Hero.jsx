@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Hero = (props) => {
   return (
-    <div className={props.className}>
+    <div className={props.className} id='home'>
         <div className=" hero-text justify-center align-middle flex-1 relative">
         <h2 className='text-2xl font-bold'>
         Welcome to the nexus of narrative and truth, where decades of journalistic integrity meet the digital age.
