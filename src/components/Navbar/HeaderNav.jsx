@@ -1,22 +1,29 @@
-import React from "react";
-import Link from "next/link";
+'use client';
 
-const HeaderNav = (props) => {
+import Link from 'next/link';
+import { Navbar } from 'flowbite-react';
+
+const HeaderNav = () => {
   return (
-    <nav className={props.className}>
-      <ul className="flex ">
-        <li className="m-2 hover:bg-color-[var(--color-primary)]">
-          <Link href="#home">Home</Link>
-        </li>
-        <li className="m-2 hover:bg-color-[var(--color-primary)]">
-          <Link href="#about">About</Link>
-        </li>
-        <li className="m-2 hover:bg-color-[var(--color-primary)]">
-          <Link href="#enroll">Contact</Link>
-        </li>
-      </ul>
-    </nav>
+    <Navbar fluid rounded>
+      <Navbar.Brand as={Link} href="https://flowbite-react.com">
+        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+      <Navbar.Collapse>
+        <Navbar.Link href="#" active>
+          Home
+        </Navbar.Link>
+        <Navbar.Link as={Link} href="#">
+          About
+        </Navbar.Link>
+        <Navbar.Link href="#">Services</Navbar.Link>
+        <Navbar.Link href="#">Pricing</Navbar.Link>
+        <Navbar.Link href="#">Contact</Navbar.Link>
+      </Navbar.Collapse>
+    </Navbar>
   );
-};
+}
 
-export default HeaderNav;
+export default HeaderNav
